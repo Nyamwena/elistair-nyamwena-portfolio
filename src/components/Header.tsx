@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code, Download } from 'lucide-react';
+import nyamwenaCV from '../documents/Elistair_Nyamwena_CV.pdf'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ const Header: React.FC = () => {
               </button>
             ))}
             <a
-              href="#"
+              href={nyamwenaCV}
               className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
             >
               <Download className="w-4 h-4 mr-2" />
